@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mihutmalin/static/css/main.a617e044.chunk.css",
+    "main.js": "/mihutmalin/static/js/main.4fce3341.chunk.js",
+    "main.js.map": "/mihutmalin/static/js/main.4fce3341.chunk.js.map",
+    "runtime-main.js": "/mihutmalin/static/js/runtime-main.088aafd7.js",
+    "runtime-main.js.map": "/mihutmalin/static/js/runtime-main.088aafd7.js.map",
+    "static/js/2.07a35d89.chunk.js": "/mihutmalin/static/js/2.07a35d89.chunk.js",
+    "static/js/2.07a35d89.chunk.js.map": "/mihutmalin/static/js/2.07a35d89.chunk.js.map",
+    "static/js/3.ad0a78ad.chunk.js": "/mihutmalin/static/js/3.ad0a78ad.chunk.js",
+    "static/js/3.ad0a78ad.chunk.js.map": "/mihutmalin/static/js/3.ad0a78ad.chunk.js.map",
+    "index.html": "/mihutmalin/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/mihutmalin/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.07a35d89.chunk.js.LICENSE.txt": "/mihutmalin/static/js/2.07a35d89.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/mihutmalin/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.088aafd7.js",
+    "static/js/2.07a35d89.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.4fce3341.chunk.js"
+  ]
+}

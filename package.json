@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "homepage": "https://mihutmalin.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihutmalin/mihutmalin.github.io.git"
+  },
   "dependencies": {
     "@next/font": "13.1.6",
     "@types/node": "18.13.0",

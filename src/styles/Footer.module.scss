@@ -1,0 +1,39 @@
+@import 'mixins';
+
+.boxFooter {
+    @include breakpoint('xs') {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-top: solid 1px var(--color-tertiary);
+    }
+}
+
+.buttonGroup {
+    @include breakpoint('xs') {
+        display: inline-flex;
+        box-shadow: none !important;
+    }
+}
+
+.button {
+    @include breakpoint('xs') {
+        border: none !important;
+        background-color: var(--color-primary);
+        box-shadow: none !important;
+        &:hover {
+            background-color: var(--color-background);
+            color: var(--color-accent);
+
+        }
+    }
+}
+
+.typography {
+    @include breakpoint('xs') {
+        display: inline-flex;
+        align-items: center;
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,36 @@
+@import 'mixins';
+
+.stackIntro {
+    @include breakpoint('xs') {
+        display: flex;
+        border-radius: 50% !important;
+        padding-bottom: 3rem;
+    }
+}
+
+.avatar {
+    @include breakpoint('xs') {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.typography1 {
+    @include breakpoint('xs') {
+        font-size: 3rem !important;
+    }
+}
+
+.typography2 {
+    @include breakpoint('xs') {
+        font-size: 1.5rem !important;
+    }
+}
+
+.linkSocialMedia {
+    @include breakpoint('xs') {
+        display: inline-flex;
+        padding-right: 1rem;
+        color: var(--color-text)
+    }
+}

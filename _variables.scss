@@ -1,0 +1,23 @@
+$breakpoints: (
+  xs: 0px,
+  sm: 600px,
+  md: 900px,
+  lg: 1200px,
+  xl: 1536px
+);
+
+// Colors dark mode
+$text-dark: #ffffff;
+$primary-dark: #1e1e1e;
+$secondary-dark: #3c3c3c;
+$tertiary-dark: #4d4d4d;
+$background-dark: #111111;
+$accent-dark: #c780fa; 
+
+// Colors light mode
+$text-light: #000000;
+$primary-light: #dfdfde;
+$secondary-light: #898b8a; 
+$tertiary-light: #c8c6c6;
+$background-light: #ffffff;
+$accent-light: #c780fa; 

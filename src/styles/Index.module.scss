@@ -1,0 +1,21 @@
+@import 'mixins';
+
+.buttonThemeSwitch {
+    @include breakpoint('xs') {
+        position: absolute;
+
+    }
+}
+
+.stackIndex {
+    @include breakpoint('xs') {
+        min-height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        background-color: var(--color-primary);
+        border: solid 1px var(--color-tertiary);
+        padding-top: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}

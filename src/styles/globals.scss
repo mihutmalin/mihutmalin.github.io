@@ -1,0 +1,36 @@
+@import 'mixins';
+
+:root {
+    --color-text: #{$text-dark};
+    --color-primary: #{$primary-dark};
+    --color-secondary: #{$secondary-dark};
+    --color-tertiary: #{$tertiary-dark};
+    --color-backgound: #{$background-dark};
+    --color-accent: #{$accent-dark};
+}
+
+html[data-theme="dark"] {
+    --color-text: #{$text-dark};
+    --color-primary: #{$primary-dark};
+    --color-secondary: #{$secondary-dark};
+    --color-tertiary: #{$tertiary-dark};
+    --color-backgound: #{$background-dark};
+    --color-accent: #{$accent-dark};
+}
+  
+html[data-theme="light"] {
+    --color-text: #{$text-light};
+    --color-primary: #{$primary-light};
+    --color-secondary: #{$secondary-light};
+    --color-tertiary: #{$tertiary-light};
+    --color-backgound: #{$background-light};
+    --color-accent: #{$accent-light};
+}
+
+body {
+    @include breakpoint('xs') {
+        color: var(--color-text);
+        margin: 0;
+        background-color: var(--color-backgound);
+    }
+}

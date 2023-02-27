@@ -17,9 +17,9 @@
 .button {
     @include breakpoint('xs') {
         border: none !important;
-        background-color: var(--color-secondary);
+        background-color: var(--color-secondary) !important;
         &:hover {
-            background-color: var(--color-secondary);
+            background-color: var(--color-secondary) !important;
             color: var(--color-accent);
             box-shadow: 0px 2px 0px var(--color-accent) !important;
         }

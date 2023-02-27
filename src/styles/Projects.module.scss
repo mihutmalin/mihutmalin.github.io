@@ -9,7 +9,7 @@
 .cardProject {
     @include breakpoint('xs') {
         color: var(--color-text);
-        background: var(--color-primary);
+        background: var(--color-primary) !important;
         box-shadow: none;
         border-radius: 15px;
         &:hover {

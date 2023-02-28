@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Menu } from "@/components/Menu";
 import { Intro } from "@/components/Intro";
 import { Footer } from "@/components/Footer";
@@ -10,10 +10,13 @@ import Head from "next/head";
 import styles from "../styles/Index.module.scss";
 
 export default function Home() {
+  const [theme, setTheme] = useState("dark")
+
   useEffect(() => {
     const theme = localStorage.getItem("data-theme");
     if (theme) {
       document.documentElement.setAttribute("data-theme", theme);
+      setTheme(theme)
     } else {
       document.documentElement.setAttribute("data-theme", "dark");
     }
@@ -24,9 +27,11 @@ export default function Home() {
     if (!theme || theme === "light") {
       document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("data-theme", "dark");
+      setTheme("dark");
     } else {
       document.documentElement.setAttribute("data-theme", "light");
       localStorage.setItem("data-theme", "light");
+      setTheme("light");
     }
   };
 
@@ -40,7 +45,7 @@ export default function Home() {
       </Head>
       <Stack className={styles.stackIndex}>
         <Button className={styles.buttonThemeSwitch} onClick={onClickButtonThemeSwitch}>
-          Switch
+          {theme === "dark" ? "Dark mode" : "Light mode"}
         </Button>
         <Menu />
         <Intro />

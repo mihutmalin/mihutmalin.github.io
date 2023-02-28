@@ -2,8 +2,7 @@
 
 .buttonThemeSwitch {
     @include breakpoint('xs') {
-        position: absolute;
-
+        position: absolute !important;
     }
 }
 

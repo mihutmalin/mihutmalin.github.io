@@ -1,24 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Menu } from "@/components/Menu";
 import { Intro } from "@/components/Intro";
 import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Projects } from "@/components/Projects";
-import { Box, Button, Stack } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import Head from "next/head";
 
 import styles from "../styles/Index.module.scss";
 
 export default function Home() {
-  const [lightMode, setLightMode] = useState(false);
+  useEffect(() => {
+    const theme = localStorage.getItem("data-theme");
+    if (theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  }, []);
 
   const onClickButtonThemeSwitch = () => {
-    if (lightMode) {
+    const theme = localStorage.getItem("data-theme");
+    if (!theme || theme === "light") {
       document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("data-theme", "dark");
     } else {
       document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("data-theme", "light");
     }
-    setLightMode(!lightMode);
   };
 
   return (
@@ -30,10 +39,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Stack className={styles.stackIndex}>
-        <Button
-          className={styles.buttonThemeSwitch}
-          onClick={onClickButtonThemeSwitch}
-        >
+        <Button className={styles.buttonThemeSwitch} onClick={onClickButtonThemeSwitch}>
           Switch
         </Button>
         <Menu />
